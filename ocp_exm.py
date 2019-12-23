@@ -1,3 +1,7 @@
+# open/closed principle
+# open for extension and closed for modification
+
+
 class Animal:
     def __init__(self, name: str):
         self.name = name
@@ -44,3 +48,37 @@ class Snake(Animal):
 class Mouse(Animal):
     def make_noise(self):
         return 'squeak'
+
+
+# another example
+
+
+# class Discount:
+#     def __init__(self, customer, price):
+#         self.customer = customer
+#         self.price = price
+#
+#     def give_discount(self):
+#         if self.customer == 'fav':
+#             return self.price * 0.2
+#         if self.customer == 'vip':
+#             return self.price * 0.4
+#
+
+class Discount:
+    def __init__(self, customer, price):
+        self.customer = customer
+        self.price = price
+
+    def get_discount(self):
+        return self.price * 0.2
+
+
+class VIPDiscount(Discount):
+    def get_discount(self):
+        return super().get_discount() * 2
+
+
+class SuperVIPDiscount(VIPDiscount):
+    def get_discount(self):
+        return super().get_discount() * 2
