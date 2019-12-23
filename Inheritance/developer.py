@@ -1,4 +1,4 @@
-from employee import Employee
+from Inheritance.employee import Employee
 
 
 class Developer(Employee):

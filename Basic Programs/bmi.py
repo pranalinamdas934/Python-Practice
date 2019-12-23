@@ -1,7 +1,7 @@
 def gather_info():
     height = float(input("enter height: "))
     weight = float(input("enter weight"))
-    unit = 'is the above metrices in metric or imperial'.lower().strip()
+    unit = 'is the above metrics in metric or imperial'.lower().strip()
     return height, weight, unit
 
 

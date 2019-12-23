@@ -21,3 +21,18 @@ class Animal:
 class Lion(Animal):
     def leg_count(self):
         pass
+
+
+class Mouse(Animal):
+    def leg_count(self):
+        pass
+
+
+class Snake(Animal):
+    def leg_count(self):
+        pass
+
+
+class Dog(Animal):
+    def leg_count(self):
+        pass
