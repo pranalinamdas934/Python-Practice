@@ -20,8 +20,8 @@ class NewEmployee:
     @fullname.deleter
     def fullname(self):
         print('Delete Name!')
-        self.first = None
-        self.last = None
+        self.first = "pranali"
+        self.last = "namdas"
 
 
 emp1 = NewEmployee('john', 'sena')
@@ -35,3 +35,6 @@ print(emp1.fullname)
 del emp1.fullname
 
 print(emp1.fullname)
+
+# TODO: advantage of property over method, when should property
+# TODO: list out all decorators

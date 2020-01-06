@@ -30,8 +30,9 @@ class Manager(Employee):
 
 dev1 = Developer('john', 'sena', 50000, 'python')
 dev2 = Developer('harry', 'potter', 60000, 'java')
+dev3 = Developer('pranali', 'namdas', 60000, 'c#')
 
-mng1 = Manager('sue', 'smith', 90000, [dev1])
+mng1 = Manager('sue', 'smith', 90000, [dev1, dev3])
 
 print(mng1.emp_email())
 
@@ -41,9 +42,20 @@ mng1.print_emp()
 
 print(isinstance(mng1, Manager))
 print(isinstance(mng1, Employee))
+
 print(isinstance(dev1, Developer))
 print(isinstance(dev1, Manager))
 
 print(issubclass(Manager, Employee))
 print(issubclass(Developer, Employee))
 print(issubclass(Manager, Developer))
+
+
+class TechLead(Manager):
+    pass
+
+
+print(issubclass(TechLead, Employee))
+
+# TODO: difference between contravariance and coveriance
+# TODO: composition vs association with examples

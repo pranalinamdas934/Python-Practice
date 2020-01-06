@@ -80,3 +80,5 @@ class QA(Employee):
 
         def work():
             print('Work done!!!')
+
+# NOTE: Hollywood principle -> don't call us, we will call you

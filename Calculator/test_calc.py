@@ -26,5 +26,8 @@ class TestCalc(unittest.TestCase):
         self.assertEqual(calc.divide(1, -1), -1)
 
         # testing exception using context manager
-        with self.assertRaises(ValueError):
+        with self.assertRaises(ValueError, msg='can not divide by zero'):
             calc.divide(10, 0)
+
+# TODO: is there any way to use decorators for test case
+# Note: exception message can be checked with msg=

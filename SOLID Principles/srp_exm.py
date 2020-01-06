@@ -11,6 +11,7 @@ class Animal:
     def get_name(self):
         pass
 
+
 # access to animal db
 
 
@@ -20,3 +21,5 @@ class AnimalDB:
 
     def save(self, animal: Animal):
         pass
+
+# TODO: what is -> in python

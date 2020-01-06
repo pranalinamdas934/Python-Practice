@@ -14,7 +14,7 @@ print('Ready, press ENTER to continue or CTRL+C to cancel')
 input()
 
 print('opening {} file fot writing'.format(dest))
-dfile = open(dest, 'a+')
+dfile = open(dest, 'a')
 print('writing data')
 dfile.write(sdata)
 print('completed writing')

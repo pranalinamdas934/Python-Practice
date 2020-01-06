@@ -36,3 +36,5 @@ class Snake(Animal):
 class Dog(Animal):
     def leg_count(self):
         pass
+
+# TODO: clarify with practical example
